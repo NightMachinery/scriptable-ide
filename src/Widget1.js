@@ -1,6 +1,6 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
-// icon-color: brown; icon-glyph: magic;
+// icon-color: green; icon-glyph: calendar-alt;
 
 const kc_s1 = "lilf_s1";
 var lilf_s1 = "";
@@ -38,6 +38,6 @@ text.textColor = new Color("#fff0c4");
 Script.setWidget(w1);
 
 if (config.runsInWidget == false) {
-    w1.presentMedium();b
+    w1.presentMedium();
     // w1.presentLarge();
 }
