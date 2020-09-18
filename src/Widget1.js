@@ -32,9 +32,12 @@ req.body = JSON.stringify({
 });
 res = await req.loadString();
 text = w1.addText(res);
-text.fo
+text.textColor = new Color("#fff0c4");
+// text.textColor = new Color("#390080");
+// text.textColor = new Color("#fbffc9");
 Script.setWidget(w1);
 
 if (config.runsInWidget == false) {
-    w1.presentLargeb();
+    w1.presentMedium();b
+    // w1.presentLarge();
 }
