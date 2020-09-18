@@ -1,6 +1,12 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
 // icon-color: green; icon-glyph: calendar-alt;
+///
+// Both of these first open Scriptable and then go to the Shortcuts app and STAY there (No difference between the two)
+// shortcuts://x-callback-url/run-shortcut?name=rem-summary&source=homescreen 
+// shortcuts://x-callback-url/run-shortcut?name=rem-summary&x-success=launcher://homescreen
+// shortcuts://run-shortcut?name=rem-summary
+///
 
 const kc_s1 = "lilf_s1";
 var lilf_s1 = "";
@@ -26,7 +32,7 @@ req.headers = {
   };
 req.method = 'POST';
 req.body = JSON.stringify({
-    "cmd": "ec $(datej) $(date +'%A %B %d') ; ec ; rem-summary",
+    "cmd": "iwidget-rem",
     "stdin": "",
     "verbose": "0"
 });
