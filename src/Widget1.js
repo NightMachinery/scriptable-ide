@@ -32,7 +32,7 @@ req.body = JSON.stringify({
 });
 res = await req.loadString();
 text = w1.addText(res);
-text.textColor = new Color("#fff0c4");
+// text.textColor = new Color("#fff0c4"); //light orange
 // text.textColor = new Color("#390080");
 // text.textColor = new Color("#fbffc9");
 Script.setWidget(w1);
