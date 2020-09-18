@@ -26,7 +26,7 @@ req.headers = {
   };
 req.method = 'POST';
 req.body = JSON.stringify({
-    "cmd": "datej ; ec ; rem-summary",
+    "cmd": "ec $(datej) $(date +'%A %B %d') ; ec ; rem-summary",
     "stdin": "",
     "verbose": "0"
 });
