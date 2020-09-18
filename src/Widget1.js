@@ -26,7 +26,7 @@ req.headers = {
   };
 req.method = 'POST';
 req.body = JSON.stringify({
-    "cmd": "datej ; rem-today ; remc-today",
+    "cmd": "datej ; ec ; rem-summary",
     "stdin": "",
     "verbose": "0"
 });
@@ -38,6 +38,6 @@ text = w1.addText(res);
 Script.setWidget(w1);
 
 if (config.runsInWidget == false) {
-    w1.presentMedium();
-    // w1.presentLarge();
+    //w1.presentMedium();
+    w1.presentLarge();
 }
