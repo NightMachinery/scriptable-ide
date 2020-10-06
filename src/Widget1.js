@@ -1,5 +1,8 @@
 // Variables used by Scriptable.
 // These must be at the very top of the file. Do not edit.
+// icon-color: deep-purple; icon-glyph: magic;
+// Variables used by Scriptable.
+// These must be at the very top of the file. Do not edit.
 // icon-color: green; icon-glyph: calendar-alt;
 ///
 // Both of these first open Scriptable and then go to the Shortcuts app and STAY there (No difference between the two)
@@ -38,9 +41,11 @@ req.body = JSON.stringify({
 });
 res = await req.loadString();
 text = w1.addText(res);
+text.url = 'shortcuts://run-shortcut?name=rem-summary'
 // text.textColor = new Color("#fff0c4"); //light orange
 // text.textColor = new Color("#390080");
 // text.textColor = new Color("#fbffc9");
+text.minimumScaleFactor = 0.75
 Script.setWidget(w1);
 
 if (config.runsInWidget == false) {
